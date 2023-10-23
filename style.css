@@ -26,6 +26,9 @@
 
 nav {
     color:var(--gris-foncé);
+} 
+a {
+    text-decoration: none;
 }    
 .centrer {
     display: flex;
@@ -416,7 +419,10 @@ h1 {
     right:0px;
     margin-right: -3.5em;
     display: none;
-}   
+} 
+.cadre-validation i  {
+    color: white;
+}
 
 .restau { 
     max-width: 2650px;

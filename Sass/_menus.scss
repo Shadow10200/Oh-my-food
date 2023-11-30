@@ -24,10 +24,6 @@
     padding-right: 75% ;     
 }
 
-.encadrement-plats:hover p {
-    width: 180px;
-}
-
 .titre-menu {
     font-family: Shrikhand ;
     font-size: 31px;
@@ -59,21 +55,71 @@
     padding: 7.5px;
     line-height: 14px;
     position: relative;
-}    
+    div{
+        .plats{
+            font-size: 17px;
+        }
+        p{
+        font-size: 15px;
+
+        }
+    }
+} 
+.animation-plats{
+    animation: plats 0.7s 0.5s ;
+}
+.animation-plats2{
+    animation: plats 0.7s 1s ;
+}
+.animation-plats3{
+    animation: plats 0.7s 1.5s ;
+} 
+.animation-plats4{
+    animation: plats 0.7s 2s ;
+}
+.animation-plats5{
+    animation: plats 0.7s 2.5s ;
+}.animation-plats6{
+    animation: plats 0.7s 3s ;
+}
+.animation-plats7{
+    animation: plats 0.7s 3.5s ;
+}
+.animation-plats8{
+    animation: plats 0.7s 4s ;
+}
+.animation-plats9{
+    animation: plats 0.7s 4.5s ;
+}
+.animation-plats10{
+    animation: plats 0.7s 5s ;
+}
+@keyframes plats {
+    0% {
+        transform:translateY(-50px);
+        opacity:0;
+    }
+    100% {
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+  
 .encadrement-plats:hover .cadre-validation {
-    opacity: 1 ; 
+    opacity: 1 ;    
     animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     display: flex;
 }
 
+
 .encadrement-plats  p {
-    width: 150px;
+    width: 270px;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; 
+    text-overflow:ellipsis ;
+    white-space: nowrap;
 } 
 .encadrement-plats:hover p {
-    width: 100px;
+    width: 170px;
 }
 .encadrement-plats:hover .p3 {
         margin-right: 1em;
@@ -137,6 +183,10 @@ body  {
     height: 50px;
     font-size: 16px;
     margin-bottom: 2em;
+    &:hover{
+        transform: scale(1.13);
+         opacity: 0.8;
+    }
 }
 .espace2 {
     padding-right: 20px;

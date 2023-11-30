@@ -145,8 +145,11 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover{
+        transform: scale(1.13);
+        opacity: 0.8;
+    }
 }
-
 .fonctionnements {
     border-radius: 20px;
     width:300px;
@@ -226,6 +229,9 @@ h1 {
 }
 .lien-couleur {
     color: #353535;
+}
+.lien-couleur2{
+    color: #FFFFFF;
 }
 .animation-ouverture {
 	animation: ouverture 0.3s steps(2, start) 0.1s ;

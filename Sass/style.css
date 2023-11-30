@@ -159,6 +159,10 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+.explorer:hover {
+  transform: scale(1.13);
+  opacity: 0.8;
+}
 
 .fonctionnements {
   border-radius: 20px;
@@ -247,6 +251,10 @@ h1 {
 
 .lien-couleur {
   color: #353535;
+}
+
+.lien-couleur2 {
+  color: #FFFFFF;
 }
 
 .animation-ouverture {
@@ -369,7 +377,7 @@ h1 {
   inset: 0;
   z-index: 1;
   opacity: 0.9;
-  animation: fin 0.5s;
+  animation: fin 3s;
   animation-fill-mode: forwards;
 }
 
@@ -399,7 +407,7 @@ h1 {
   font-weight: bold;
   font-size: 3em;
   animation-name: fade-in-top;
-  animation-duration: 1.2s;
+  animation-duration: 0.4s;
   animation-timing-function: ease-out;
   animation-delay: 0s;
   animation-iteration-count: 1;
@@ -444,10 +452,6 @@ h1 {
   padding-right: 75%;
 }
 
-.encadrement-plats:hover p {
-  width: 180px;
-}
-
 .titre-menu {
   font-family: Shrikhand;
   font-size: 31px;
@@ -481,7 +485,63 @@ h1 {
   line-height: 14px;
   position: relative;
 }
+.encadrement-plats div .plats {
+  font-size: 17px;
+}
+.encadrement-plats div p {
+  font-size: 15px;
+}
 
+.animation-plats {
+  animation: plats 0.7s 0.5s;
+}
+
+.animation-plats2 {
+  animation: plats 0.7s 1s;
+}
+
+.animation-plats3 {
+  animation: plats 0.7s 1.5s;
+}
+
+.animation-plats4 {
+  animation: plats 0.7s 2s;
+}
+
+.animation-plats5 {
+  animation: plats 0.7s 2.5s;
+}
+
+.animation-plats6 {
+  animation: plats 0.7s 3s;
+}
+
+.animation-plats7 {
+  animation: plats 0.7s 3.5s;
+}
+
+.animation-plats8 {
+  animation: plats 0.7s 4s;
+}
+
+.animation-plats9 {
+  animation: plats 0.7s 4.5s;
+}
+
+.animation-plats10 {
+  animation: plats 0.7s 5s;
+}
+
+@keyframes plats {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .encadrement-plats:hover .cadre-validation {
   opacity: 1;
   animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -489,14 +549,14 @@ h1 {
 }
 
 .encadrement-plats p {
-  width: 150px;
+  width: 270px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .encadrement-plats:hover p {
-  width: 100px;
+  width: 170px;
 }
 
 .encadrement-plats:hover .p3 {
@@ -567,6 +627,10 @@ body {
   height: 50px;
   font-size: 16px;
   margin-bottom: 2em;
+}
+.commander:hover {
+  transform: scale(1.13);
+  opacity: 0.8;
 }
 
 .espace2 {

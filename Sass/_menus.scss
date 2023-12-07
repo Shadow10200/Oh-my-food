@@ -52,9 +52,12 @@
     width: 70%;
     height: 54px;
     margin-bottom: 10px;
-    padding: 7.5px;
+    padding: 7px;
     line-height: 14px;
     position: relative;
+    opacity: 0;
+    transform:translateY(-50px);
+    overflow: hidden;
     div{
         .plats{
             font-size: 17px;
@@ -67,32 +70,42 @@
 } 
 .animation-plats{
     animation: plats 0.7s 0.5s ;
+    animation-fill-mode: forwards;
 }
 .animation-plats2{
     animation: plats 0.7s 1s ;
+    animation-fill-mode: forwards;
 }
 .animation-plats3{
     animation: plats 0.7s 1.5s ;
+    animation-fill-mode: forwards;
 } 
 .animation-plats4{
     animation: plats 0.7s 2s ;
+    animation-fill-mode: forwards;
 }
 .animation-plats5{
     animation: plats 0.7s 2.5s ;
+    animation-fill-mode: forwards;
 }.animation-plats6{
     animation: plats 0.7s 3s ;
+    animation-fill-mode: forwards;
 }
 .animation-plats7{
     animation: plats 0.7s 3.5s ;
+    animation-fill-mode: forwards;
 }
 .animation-plats8{
     animation: plats 0.7s 4s ;
+    animation-fill-mode: forwards;
 }
 .animation-plats9{
     animation: plats 0.7s 4.5s ;
+    animation-fill-mode: forwards;
 }
 .animation-plats10{
     animation: plats 0.7s 5s ;
+    animation-fill-mode: forwards;
 }
 @keyframes plats {
     0% {

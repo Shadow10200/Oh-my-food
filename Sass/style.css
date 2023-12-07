@@ -142,7 +142,7 @@ h1 {
 .logo-blanc1 {
   display: flex;
   margin-bottom: 1em;
-  width: 80px;
+  width: 100px;
   height: 20px;
 }
 
@@ -296,7 +296,7 @@ h1 {
   }
   .logo-blanc {
     display: flex;
-    width: 80px;
+    width: 120px;
     height: 20px;
   }
   .logo-blanc1 {

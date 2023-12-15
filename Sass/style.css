@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /******* General *******/
 * {
-  font-family: "Rotobo", sans-serif;
+  font-family: "", sans-serif;
 }
 
 :root {
@@ -158,10 +158,12 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .explorer:hover {
   transform: scale(1.13);
   opacity: 0.8;
+  box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .fonctionnements {
@@ -453,13 +455,11 @@ h1 {
 }
 
 .titre-menu {
-  font-family: Shrikhand;
+  font-family: "Shrikhand", serif;
   font-size: 31px;
   font-style: italic;
   letter-spacing: 0em;
-  width: 290px;
-  height: 41px;
-  font-weight: 900;
+  padding-right: 2em;
 }
 
 .sous-titre-menu {
@@ -569,12 +569,16 @@ h1 {
 }
 
 .encadrement-plats:hover p {
-  width: 170px;
+  width: 200px;
 }
 
 .encadrement-plats:hover .p3 {
   margin-right: 1em;
   animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.encadrement-plats:not(:hover) .p3 {
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes slide-left {
@@ -583,6 +587,19 @@ h1 {
   }
   100% {
     transform: translateX(-55px);
+  }
+}
+.encadrement-plats:not(:hover) .cadre-validation {
+  opacity: 1;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-55px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 .p3 {
@@ -640,10 +657,12 @@ body {
   height: 50px;
   font-size: 16px;
   margin-bottom: 2em;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .commander:hover {
   transform: scale(1.13);
   opacity: 0.8;
+  box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .espace2 {

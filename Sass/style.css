@@ -562,7 +562,7 @@ h1 {
 }
 
 .encadrement-plats:hover p {
-  width: 200px;
+  width: 300px;
 }
 
 .encadrement-plats:hover .cadre-validation {
@@ -691,9 +691,12 @@ body {
   }
 }
 /******* Media queries *******/
-@media (min-width: 50px) {
+@media (max-width: 532px) {
   .encadrement-plats:hover p {
-    width: 300px;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 /******* Media queries *******/
@@ -709,5 +712,6 @@ body {
     overflow: visible;
     text-overflow: clip;
     white-space: nowrap;
+    width: 200px;
   }
 }/*# sourceMappingURL=style.css.map */

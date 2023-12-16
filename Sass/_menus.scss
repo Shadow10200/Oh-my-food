@@ -124,7 +124,7 @@
     white-space: nowrap;
 } 
 .encadrement-plats:hover p {
-    width: 200px;
+    width: 300px;
 }
 .encadrement-plats:hover .cadre-validation {
     opacity: 1 ;    
@@ -242,15 +242,20 @@ body  {
       transform: scale(0.5);
     }
 }
+
 /******* Media queries *******/
-@media( min-width: 50px )
+@media( max-width: 532px )
 /******* Menus *******/{
 
 .encadrement-plats:hover p{
-    width: 300px;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     }
-
+    
 }
+
 
 /******* Media queries *******/
 @media( min-width: 800px )
@@ -266,5 +271,6 @@ body  {
     overflow: visible;
     text-overflow: clip ;
     white-space: nowrap;
+    width: 200px;
   }  
 }

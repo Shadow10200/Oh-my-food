@@ -122,6 +122,7 @@
     overflow: hidden;
     text-overflow:ellipsis ;
     white-space: nowrap;
+    width: 90%;
 } 
 .encadrement-plats:hover p {
     width: 300px;
@@ -248,7 +249,7 @@ body  {
 /******* Menus *******/{
 
 .encadrement-plats:hover p{
-    width: 200px;
+    width: 70%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
